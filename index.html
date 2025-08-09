@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wiston Lestin – Cloud Security | Detection & Response</title>
+  <meta name="description" content="Wiston Lestin – Detection Engineering, Incident Response, Security Automation, Cloud Security (Azure, AWS)." />
+  <meta property="og:title" content="Wiston Lestin – Cloud Security | Detection & Response" />
+  <meta property="og:description" content="Detection Engineering • Incident Response • Security Automation • Cloud Security" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/banner-desktop.png" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b1623}
+    html,body{background:var(--bg);color:#fff;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.06)}
+    .chip{border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04)}
+    .grid-auto{grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+    a{transition:all .2s ease}
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="sticky top-0 z-30 bg-opacity-70 backdrop-filter backdrop-blur border-b border-white border-opacity-10" style="background:rgba(11,22,35,.6)">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <img src="assets/secureorbit-logo.png" class="w-8 h-8 rounded" alt="SecureOrbit logo"/>
+        <span class="font-semibold tracking-wide">Wiston Lestin</span>
+      </div>
+      <nav class="hidden md:flex items-center space-x-6 text-sm text-blue-200">
+        <a href="#about" class="hover:text-white">About</a>
+        <a href="#skills" class="hover:text-white">Skills</a>
+        <a href="#experience" class="hover:text-white">Experience</a>
+        <a href="#projects" class="hover:text-white">Projects</a>
+        <a href="#certs" class="hover:text-white">Certifications</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
+        <button id="langToggle" class="ml-2 px-3 py-1 rounded chip text-xs">FR/EN</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative">
+    <div class="max-w-6xl mx-auto px-4 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">Wiston Lestin</h1>
+        <p class="mt-4 text-xl md:text-2xl text-blue-200" data-i18n="tagline">Detection & Response • Security Automation • Cloud Security</p>
+        <p class="mt-6 text-blue-100 max-w-prose" data-i18n="summary-en">Cybersecurity professional focused on Detection Engineering, Incident Response, and security automation across enterprise and cloud environments. Strong with Microsoft Sentinel/Defender XDR and automation that reduces MTTR.</p>
+        <p class="mt-6 hidden text-blue-100 max-w-prose" data-i18n="summary-fr">Professionnel en cybersécurité spécialisé en détection, réponse aux incidents et automatisation de la sécurité dans les environnements d’entreprise et cloud. Expertise Microsoft Sentinel/Defender XDR et automatisations réduisant le MTTR.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#contact" class="px-5 py-3 rounded-lg bg-blue-600 hover:bg-blue-500 font-semibold">Contact</a>
+          <a href="Wiston_Lestin_CV.pdf" class="px-5 py-3 rounded-lg chip font-semibold" target="_blank" rel="noopener">Download CV</a>
+          <a href="https://www.linkedin.com/in/wiston-lestin" target="_blank" rel="noopener" class="px-5 py-3 rounded-lg chip font-semibold">LinkedIn</a>
+          <a href="https://github.com/wislest" target="_blank" rel="noopener" class="px-5 py-3 rounded-lg chip font-semibold">GitHub</a>
+        </div>
+      </div>
+      <div class="justify-self-center">
+        <img src="headshot.jpg" alt="Wiston Lestin headshot" class="rounded-2xl w-64 h-64 object-cover border border-white border-opacity-10 shadow-xl"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-12">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-6">
+      <div class="md:col-span-1"><h2 class="text-2xl font-bold">About</h2></div>
+      <div class="md:col-span-2 card rounded-2xl p-6">
+        <p class="text-blue-100" data-i18n="about-en">
+          I build scalable detections (Detection-as-Code), lead high-pressure investigations, and design SOAR playbooks that cut MTTR by 40–50%. Experienced across Microsoft Security Stack (Sentinel, Defender XDR, Defender for Cloud) with adaptability to AWS & GCP.
+        </p>
+        <p class="text-blue-100 hidden" data-i18n="about-fr">
+          Je conçois des détections à grande échelle (Detection-as-Code), je mène des investigations en contexte critique et je développe des playbooks SOAR réduisant le MTTR de 40–50 %. Expérience sur la suite Microsoft (Sentinel, Defender XDR, Defender for Cloud) et adaptation rapide à AWS & GCP.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-6">Skills</h2>
+      <div class="grid grid-auto gap-3">
+        <span class="chip px-3 py-2 rounded-lg">Detection-as-Code</span>
+        <span class="chip px-3 py-2 rounded-lg">KQL</span>
+        <span class="chip px-3 py-2 rounded-lg">Incident Response</span>
+        <span class="chip px-3 py-2 rounded-lg">Threat Hunting</span>
+        <span class="chip px-3 py-2 rounded-lg">Microsoft Sentinel</span>
+        <span class="chip px-3 py-2 rounded-lg">Defender XDR</span>
+        <span class="chip px-3 py-2 rounded-lg">Logic Apps / SOAR</span>
+        <span class="chip px-3 py-2 rounded-lg">Python</span>
+        <span class="chip px-3 py-2 rounded-lg">PowerShell</span>
+        <span class="chip px-3 py-2 rounded-lg">Terraform</span>
+        <span class="chip px-3 py-2 rounded-lg">Azure / AWS / GCP</span>
+        <span class="chip px-3 py-2 rounded-lg">Splunk / Elastic</span>
+        <span class="chip px-3 py-2 rounded-lg">Microsoft Graph API</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-6">Experience</h2>
+      <div class="space-y-4">
+        <div class="card rounded-2xl p-6">
+          <div class="flex items-baseline justify-between flex-wrap gap-2">
+            <h3 class="text-xl font-semibold">Security Analyst – Detection & Response Operations</h3>
+            <span class="text-blue-200">TC Transcontinental · Jan 2023 – Present</span>
+          </div>
+          <ul class="mt-3 space-y-2 text-blue-100 list-disc ml-5">
+            <li>Reduced false positives by 40% via Sentinel rule tuning.</li>
+            <li>Cut MTTR by 50% using automated SOAR playbooks.</li>
+            <li>Led IR across 7,000+ endpoints.</li>
+          </ul>
+        </div>
+        <div class="card rounded-2xl p-6">
+          <div class="flex items-baseline justify-between flex-wrap gap-2">
+            <h3 class="text-xl font-semibold">Security Detection Analyst</h3>
+            <span class="text-blue-200">Desjardins · Apr 2022 – Nov 2022</span>
+          </div>
+          <ul class="mt-3 space-y-2 text-blue-100 list-disc ml-5">
+            <li>50% FP reduction in financial-sector detections.</li>
+            <li>Handled high-volume alerts in a regulated environment.</li>
+          </ul>
+        </div>
+        <div class="card rounded-2xl p-6">
+          <div class="flex items-baseline justify-between flex-wrap gap-2">
+            <h3 class="text-xl font-semibold">Information Security Specialist – Detection Engineering</h3>
+            <span class="text-blue-200">Hitachi Systems Security · Oct 2021 – Apr 2022</span>
+          </div>
+          <ul class="mt-3 space-y-2 text-blue-100 list-disc ml-5">
+            <li>Built enterprise SIEM detections and proactive hunts.</li>
+            <li>Managed EDR platforms and forensic investigations.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-6">Selected Projects</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <article class="card rounded-2xl p-6">
+          <h3 class="font-semibold text-lg">DefenderHunter Detection Framework</h3>
+          <p class="text-blue-100 mt-2">PowerShell-based hunting & detection system integrated with Microsoft Defender XDR and Sentinel for automated investigations.</p>
+          <p class="text-blue-200 text-sm mt-2">Tech: PowerShell, KQL, Defender XDR, Sentinel</p>
+        </article>
+        <article class="card rounded-2xl p-6">
+          <h3 class="font-semibold text-lg">Network Share Enumeration System</h3>
+          <p class="text-blue-100 mt-2">Automated permissions analysis with CMDB sync and ServiceNow remediation workflows.</p>
+          <p class="text-blue-200 text-sm mt-2">Tech: PowerShell, CMDB, ServiceNow</p>
+        </article>
+        <article class="card rounded-2xl p-6">
+          <h3 class="font-semibold text-lg">AuditCloud360 (In Dev)</h3>
+          <p class="text-blue-100 mt-2">Automated Azure & AWS security audit with reporting and alerting.</p>
+          <p class="text-blue-200 text-sm mt-2">Tech: Azure, AWS, Python, Terraform</p>
+        </article>
+        <article class="card rounded-2xl p-6 md:col-span-3">
+          <h3 class="font-semibold text-lg">SecureOrbit360 (In Dev)</h3>
+          <p class="text-blue-100 mt-2">SOC workflow automation integrating Logic Apps and n8n (isolation, enrichment, ticketing, notifications).</p>
+          <p class="text-blue-200 text-sm mt-2">Tech: Logic Apps, n8n, Defender XDR, Sentinel</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certs" class="py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-6">Certifications</h2>
+      <ul class="grid grid-auto gap-3">
+        <li class="chip rounded-lg px-4 py-3">CompTIA CASP+</li>
+        <li class="chip rounded-lg px-4 py-3">CompTIA PenTest+</li>
+        <li class="chip rounded-lg px-4 py-3">CompTIA CySA+</li>
+        <li class="chip rounded-lg px-4 py-3">CompTIA Security+</li>
+        <li class="chip rounded-lg px-4 py-3">Microsoft Azure Fundamentals (AZ‑900)</li>
+        <li class="chip rounded-lg px-4 py-3">ISC² Certified in Cybersecurity</li>
+        <li class="chip rounded-lg px-4 py-3">ICSI Certified Network Security Analyst</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold">Get in touch</h2>
+      <p class="mt-2 text-blue-200">Open to IR, detection engineering, and security automation roles.</p>
+      <div class="mt-6 flex flex-wrap gap-3 justify-center">
+        <a href="mailto:contact@secureorbit.cloud" class="px-5 py-3 rounded-lg bg-blue-600 hover:bg-blue-500 font-semibold">Email</a>
+        <a href="https://www.linkedin.com/in/wiston-lestin" target="_blank" rel="noopener" class="px-5 py-3 rounded-lg chip font-semibold">LinkedIn</a>
+        <a href="https://github.com/wislest" target="_blank" rel="noopener" class="px-5 py-3 rounded-lg chip font-semibold">GitHub</a>
+      </div>
+      <p class="mt-6 text-sm text-blue-300">Sorel‑Tracy (Quebec), Canada · Remote across Canada</p>
+    </div>
+  </section>
+
+  <footer class="border-t border-white border-opacity-10">
+    <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-blue-300 flex items-center justify-between">
+      <span>© <span id="y"></span> Wiston Lestin</span>
+      <a href="https://secureorbit.cloud" class="hover:text-white">secureorbit.cloud</a>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('langToggle');
+    const els = {
+      en: document.querySelectorAll('[data-i18n$="-en"], [data-i18n="tagline"]'),
+      fr: document.querySelectorAll('[data-i18n$="-fr"]')
+    };
+    let fr=false; toggle?.addEventListener('click',()=>{fr=!fr; els.fr.forEach(e=>e.classList.toggle('hidden',!fr)); els.en.forEach(e=>e.classList.toggle('hidden',fr)); toggle.textContent = fr? 'EN/FR' : 'FR/EN';});
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://wiston.secureorbit.cloud/sitemap.xml
