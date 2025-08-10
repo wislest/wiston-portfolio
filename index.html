@@ -31,12 +31,30 @@
         <span class="font-semibold tracking-wide">Wiston Lestin</span>
       </div>
       <nav class="hidden md:flex items-center space-x-6 text-sm text-blue-200">
-        <a href="#about" class="hover:text-white">About</a>
-        <a href="#skills" class="hover:text-white">Skills</a>
-        <a href="#experience" class="hover:text-white">Experience</a>
-        <a href="#projects" class="hover:text-white">Projects</a>
-        <a href="#certs" class="hover:text-white">Certifications</a>
-        <a href="#contact" class="hover:text-white">Contact</a>
+        <a href="#about" class="hover:text-white">
+          <span data-i18n="nav-about-en">About</span>
+          <span class="hidden" data-i18n="nav-about-fr">À propos</span>
+        </a>
+        <a href="#skills" class="hover:text-white">
+          <span data-i18n="nav-skills-en">Skills</span>
+          <span class="hidden" data-i18n="nav-skills-fr">Compétences</span>
+        </a>
+        <a href="#experience" class="hover:text-white">
+          <span data-i18n="nav-experience-en">Experience</span>
+          <span class="hidden" data-i18n="nav-experience-fr">Expérience</span>
+        </a>
+        <a href="#projects" class="hover:text-white">
+          <span data-i18n="nav-projects-en">Projects</span>
+          <span class="hidden" data-i18n="nav-projects-fr">Projets</span>
+        </a>
+        <a href="#certs" class="hover:text-white">
+          <span data-i18n="nav-certs-en">Certifications</span>
+          <span class="hidden" data-i18n="nav-certs-fr">Certifications</span>
+        </a>
+        <a href="#contact" class="hover:text-white">
+          <span data-i18n="nav-contact-en">Contact</span>
+          <span class="hidden" data-i18n="nav-contact-fr">Contact</span>
+        </a>
         <button id="langToggle" class="ml-2 px-3 py-1 rounded chip text-xs">FR/EN</button>
       </nav>
     </div>
@@ -85,12 +103,21 @@
   <!-- Skills -->
   <section id="skills" class="py-12">
     <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl font-bold mb-6">Skills</h2>
+      <h2 class="text-2xl font-bold mb-6">
+        <span data-i18n="skills-title-en">Skills</span>
+        <span class="hidden" data-i18n="skills-title-fr">Compétences</span>
+      </h2>
       <div class="grid grid-auto gap-3">
         <span class="chip px-3 py-2 rounded-lg">Detection-as-Code</span>
         <span class="chip px-3 py-2 rounded-lg">KQL</span>
-        <span class="chip px-3 py-2 rounded-lg">Incident Response</span>
-        <span class="chip px-3 py-2 rounded-lg">Threat Hunting</span>
+        <span class="chip px-3 py-2 rounded-lg">
+          <span data-i18n="skill-ir-en">Incident Response</span>
+          <span class="hidden" data-i18n="skill-ir-fr">Réponse aux incidents</span>
+        </span>
+        <span class="chip px-3 py-2 rounded-lg">
+          <span data-i18n="skill-hunt-en">Threat Hunting</span>
+          <span class="hidden" data-i18n="skill-hunt-fr">Chasse aux menaces</span>
+        </span>
         <span class="chip px-3 py-2 rounded-lg">Microsoft Sentinel</span>
         <span class="chip px-3 py-2 rounded-lg">Defender XDR</span>
         <span class="chip px-3 py-2 rounded-lg">Logic Apps / SOAR</span>
@@ -99,7 +126,10 @@
         <span class="chip px-3 py-2 rounded-lg">Terraform</span>
         <span class="chip px-3 py-2 rounded-lg">Azure / AWS / GCP</span>
         <span class="chip px-3 py-2 rounded-lg">Splunk / Elastic</span>
-        <span class="chip px-3 py-2 rounded-lg">Microsoft Graph API</span>
+        <span class="chip px-3 py-2 rounded-lg">
+          <span data-i18n="skill-graph-en">Microsoft Graph API</span>
+          <span class="hidden" data-i18n="skill-graph-fr">API Microsoft Graph</span>
+        </span>
       </div>
     </div>
   </section>
@@ -107,7 +137,10 @@
   <!-- Experience -->
   <section id="experience" class="py-12">
     <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl font-bold mb-6">Experience</h2>
+      <h2 class="text-2xl font-bold mb-6">
+        <span data-i18n="exp-title-en">Experience</span>
+        <span class="hidden" data-i18n="exp-title-fr">Expérience</span>
+      </h2>
       <div class="space-y-4">
         <div class="card rounded-2xl p-6">
           <div class="flex items-baseline justify-between flex-wrap gap-2">
@@ -158,7 +191,10 @@
   <!-- Projects -->
   <section id="projects" class="py-12">
     <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl font-bold mb-6">Selected Projects</h2>
+      <h2 class="text-2xl font-bold mb-6">
+        <span data-i18n="proj-title-en">Selected Projects</span>
+        <span class="hidden" data-i18n="proj-title-fr">Projets sélectionnés</span>
+      </h2>
       <div class="grid md:grid-cols-3 gap-6 items-stretch">
         <article class="card rounded-2xl p-6 h-full flex flex-col min-h-[220px] md:min-h-[260px]">
           <h3 class="font-semibold text-lg">DefenderHunter Detection Framework</h3>
@@ -187,7 +223,10 @@
   <!-- Certifications -->
   <section id="certs" class="py-12">
     <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl font-bold mb-6">Certifications</h2>
+      <h2 class="text-2xl font-bold mb-6">
+        <span data-i18n="certs-title-en">Certifications</span>
+        <span class="hidden" data-i18n="certs-title-fr">Certifications</span>
+      </h2>
       <ul class="grid grid-auto gap-3">
         <li class="chip rounded-lg px-4 py-3">CompTIA CASP+</li>
         <li class="chip rounded-lg px-4 py-3">CompTIA PenTest+</li>
@@ -203,8 +242,12 @@
   <!-- Contact -->
   <section id="contact" class="py-16">
     <div class="max-w-6xl mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold">Get in touch</h2>
-      <p class="mt-2 text-blue-200">Open to IR, detection engineering, and security automation roles.</p>
+      <h2 class="text-3xl font-bold">
+        <span data-i18n="contact-title-en">Get in touch</span>
+        <span class="hidden" data-i18n="contact-title-fr">Contact</span>
+      </h2>
+      <p class="mt-2 text-blue-200" data-i18n="contact-sub-en">Open to IR, detection engineering, and security automation roles.</p>
+      <p class="mt-2 text-blue-200 hidden" data-i18n="contact-sub-fr">Ouvert aux rôles IR, ingénierie de détection et automatisation de la sécurité.</p>
       <div class="mt-6 flex flex-wrap gap-3 justify-center">
         <a href="mailto:contact@secureorbit.cloud" class="px-5 py-3 rounded-lg bg-blue-600 hover:bg-blue-500 font-semibold">Email</a>
         <a href="https://www.linkedin.com/in/wiston-lestin" target="_blank" rel="noopener" class="px-5 py-3 rounded-lg chip font-semibold">LinkedIn</a>
