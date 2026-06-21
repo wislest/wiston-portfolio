@@ -287,35 +287,70 @@
         <span data-i18n="proj-title-en">Selected Projects</span>
         <span class="hidden" data-i18n="proj-title-fr">Projets sélectionnés</span>
       </h2>
+
+      <h3 class="text-xs uppercase tracking-widest text-blue-300 mb-3">
+        <span data-i18n="proj-oss-en">Open-Source Tools</span>
+        <span class="hidden" data-i18n="proj-oss-fr">Outils open source</span>
+      </h3>
       <div class="grid md:grid-cols-3 gap-6 items-stretch">
         <article class="card rounded-2xl p-6 h-full flex flex-col min-h-[220px] md:min-h-[260px]">
-          <h3 class="font-semibold text-lg">DefenderHunter Detection Framework</h3>
-          <p class="text-blue-100 mt-2">PowerShell-based hunting &amp; detection system integrated with Microsoft Defender XDR and Sentinel for automated investigations.</p>
+          <h3 class="font-semibold text-lg">DefenderHunter</h3>
+          <p class="text-blue-100 mt-2">Detection-as-Code threat-hunting framework for Microsoft Defender XDR &amp; Sentinel — 22 MITRE-mapped ransomware query packs with automated IOC enrichment.</p>
           <div class="mt-auto pt-3">
-            <p class="text-blue-200 text-sm">Tech: PowerShell, KQL, Defender XDR, Sentinel</p>
+            <p class="text-blue-200 text-sm">PowerShell · KQL · Defender XDR · Sentinel · MIT</p>
             <a href="https://github.com/wislest/DefenderHunting" target="_blank" rel="noopener" class="inline-block mt-2 text-sm text-blue-300 hover:text-white">GitHub →</a>
           </div>
         </article>
         <article class="card rounded-2xl p-6 h-full flex flex-col min-h-[220px] md:min-h-[260px]">
-          <h3 class="font-semibold text-lg"><span data-i18n="proj-ai-title-en">AI-Driven Detection &amp; Automation Lab</span><span class="hidden" data-i18n="proj-ai-title-fr">Labo de détection &amp; automatisation par IA</span></h3>
-          <p class="text-blue-100 mt-2" data-i18n="proj-ai-en">Self-hosted lab for Detection-as-Code and AI-driven security automation: agentic, MCP-style tool orchestration, containerized detection tooling, and secure API pipelines for automated detection, enrichment and response.</p>
-          <p class="text-blue-100 mt-2 hidden" data-i18n="proj-ai-fr">Laboratoire auto-hébergé de détection programmable et d’automatisation de la sécurité par IA : orchestration d’outils agentive (type MCP), outillage de détection conteneurisé et pipelines d’API sécurisés pour la détection, l’enrichissement et la réponse automatisés.</p>
-          <p class="text-blue-200 text-sm mt-auto pt-2">Tech: Docker, Python, LLM orchestration, REST APIs, n8n</p>
+          <h3 class="font-semibold text-lg">Sandbox Malware Analyzer</h3>
+          <p class="text-blue-100 mt-2">Disposable, automated malware-analysis lab on Windows Sandbox — multi-format detonation (EXE / doc / PDF / URL / email), behavioral capture, IOC extraction and HTML/JSON reporting.</p>
+          <div class="mt-auto pt-3">
+            <p class="text-blue-200 text-sm">PowerShell · Windows Sandbox · YARA · MIT</p>
+            <a href="https://github.com/wislest/sandbox-malware-analyzer" target="_blank" rel="noopener" class="inline-block mt-2 text-sm text-blue-300 hover:text-white">GitHub →</a>
+          </div>
         </article>
         <article class="card rounded-2xl p-6 h-full flex flex-col min-h-[220px] md:min-h-[260px]">
           <h3 class="font-semibold text-lg">Network Share Enumeration System</h3>
           <p class="text-blue-100 mt-2">Automated permissions analysis with CMDB sync and ServiceNow remediation workflows — 90% audit-time reduction.</p>
-          <p class="text-blue-200 text-sm mt-auto pt-2">Tech: PowerShell, CMDB, ServiceNow</p>
+          <p class="text-blue-200 text-sm mt-auto pt-2">PowerShell · Active Directory · CMDB · ServiceNow</p>
+        </article>
+      </div>
+
+      <h3 class="text-xs uppercase tracking-widest text-blue-300 mb-3 mt-10">
+        <span data-i18n="proj-so-en">SecureOrbit Platform</span>
+        <span class="hidden" data-i18n="proj-so-fr">Plateforme SecureOrbit</span>
+      </h3>
+      <div class="grid md:grid-cols-3 gap-6 items-stretch">
+        <article class="card rounded-2xl p-6 h-full flex flex-col min-h-[220px] md:min-h-[260px]">
+          <h3 class="font-semibold text-lg">SecureOrbit EASM</h3>
+          <p class="text-blue-100 mt-2">External Attack Surface Management — continuous discovery and monitoring of internet-facing assets, with correlation and confidence scoring to prioritize real exposures.</p>
+          <div class="mt-auto pt-3">
+            <p class="text-blue-200 text-sm">Python · Docker · REST APIs · alerting</p>
+            <a href="https://secureorbit.cloud" target="_blank" rel="noopener" class="inline-block mt-2 text-sm text-blue-300 hover:text-white">SecureOrbit →</a>
+          </div>
+        </article>
+        <article class="card rounded-2xl p-6 h-full flex flex-col min-h-[220px] md:min-h-[260px]">
+          <h3 class="font-semibold text-lg">HORUS</h3>
+          <p class="text-blue-100 mt-2">Agentic threat-intelligence &amp; attack-surface engine behind SecureOrbit EASM — automated collection, correlation and confidence scoring with multi-channel alerting and reporting.</p>
+          <p class="text-blue-200 text-sm mt-auto pt-2">Python · Docker · agentic AI · n8n</p>
+        </article>
+        <article class="card rounded-2xl p-6 h-full flex flex-col min-h-[220px] md:min-h-[260px]">
+          <h3 class="font-semibold text-lg">CertWatch</h3>
+          <p class="text-blue-100 mt-2">TLS/SSL certificate-monitoring SaaS — expiry &amp; misconfiguration alerts via an SSRF-hardened scanning engine and webhook-driven notifications.</p>
+          <div class="mt-auto pt-3">
+            <p class="text-blue-200 text-sm">Python · SSRF-hardened scanner · webhooks</p>
+            <a href="https://certwatch.secureorbit.cloud" target="_blank" rel="noopener" class="inline-block mt-2 text-sm text-blue-300 hover:text-white">Live →</a>
+          </div>
         </article>
         <article class="card rounded-2xl p-6 h-full flex flex-col min-h-[220px] md:min-h-[260px]">
           <h3 class="font-semibold text-lg">AuditCloud360 <span class="text-blue-300 text-sm">(In Dev)</span></h3>
           <p class="text-blue-100 mt-2">Automated Azure &amp; AWS security audit with reporting and alerting.</p>
-          <p class="text-blue-200 text-sm mt-auto pt-2">Tech: Azure, AWS, Python, Terraform</p>
+          <p class="text-blue-200 text-sm mt-auto pt-2">Azure · AWS · Python · Terraform</p>
         </article>
         <article class="card rounded-2xl p-6 h-full flex flex-col min-h-[220px] md:min-h-[260px]">
           <h3 class="font-semibold text-lg">SecureOrbit360 <span class="text-blue-300 text-sm">(In Dev)</span></h3>
           <p class="text-blue-100 mt-2">SOC workflow automation integrating Logic Apps and n8n (isolation, enrichment, ticketing, notifications).</p>
-          <p class="text-blue-200 text-sm mt-auto pt-2">Tech: Logic Apps, n8n, Defender XDR, Sentinel</p>
+          <p class="text-blue-200 text-sm mt-auto pt-2">Logic Apps · n8n · Defender XDR · Sentinel</p>
         </article>
       </div>
     </div>
